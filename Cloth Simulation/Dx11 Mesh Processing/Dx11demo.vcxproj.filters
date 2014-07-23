@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGObject.cpp">
+      <Filter>Classes\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGClock.cpp">
+      <Filter>Classes\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\HLSLFactory.cpp">
+      <Filter>Classes\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGTextureLoader.cpp">
+      <Filter>Classes\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGPipeline.cpp">
+      <Filter>Classes\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGOutputMergerStage.cpp">
+      <Filter>Classes\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGBaseModel.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGCube.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGModelInstance.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGPrincipleAxes.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGPyramid.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGVertexBasic.cpp">
+      <Filter>Classes\Vertex Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGVertexExt.cpp">
+      <Filter>Classes\Vertex Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Triangle.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\HermiteCurve.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGRasteriserStage.cpp">
+      <Filter>Classes\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGBasicGrass.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGBasicTerrain.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGSnowParticles.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Cloth.cpp">
+      <Filter>Classes\Cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="CShaderFactory.cpp">
+      <Filter>Classes\Cloth</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\CGObject.h">
+      <Filter>Classes\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGClock.h">
+      <Filter>Classes\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\HLSLFactory.h">
+      <Filter>Classes\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGTextureLoader.h">
+      <Filter>Classes\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGPipeline.h">
+      <Filter>Classes\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGOutputMergerStage.h">
+      <Filter>Classes\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\buffers.h">
+      <Filter>Classes\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGBaseModel.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGCube.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGModelInstance.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGPrincipleAxes.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGPyramid.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGPivotCamera.h">
+      <Filter>Classes\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGVertexBasic.h">
+      <Filter>Classes\Vertex Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGVertexExt.h">
+      <Filter>Classes\Vertex Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Triangle.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\HermiteCurve.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGRasteriserStage.h">
+      <Filter>Classes\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGBasicGrass.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGBasicTerrain.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CGSnowParticles.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="CGModel\CGMaterial.h">
+      <Filter>Classes\CGModel</Filter>
+    </ClInclude>
+    <ClInclude Include="CGModel\CGModel.h">
+      <Filter>Classes\CGModel</Filter>
+    </ClInclude>
+    <ClInclude Include="CGModel\CGPolyMesh.h">
+      <Filter>Classes\CGModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Cloth.h">
+      <Filter>Classes\Cloth</Filter>
+    </ClInclude>
+    <ClInclude Include="CShaderFactory.h">
+      <Filter>Classes\Cloth</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shaders\basic_colour_ps.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\basic_colour_vs.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\basic_lighting_ps.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\basic_lighting_vs.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\basic_tex_lighting_ps.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\basic_tex_lighting_vs.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\hermite_gs.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\hermite_ps.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\hermite_vs.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\basic_grass_vs.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\basic_grass_gs.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\basic_grass_ps.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\snow_vs.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\snow_ps.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\snow_update_gs.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\snow_render_gs.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\cloth_forces_cs.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\cloth_anchors_cs.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\cloth_constraints_cs.hlsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{92bdbfda-c2bb-4d6f-978d-edd73f566ff7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Shaders">
+      <UniqueIdentifier>{925d29ef-9632-4ef5-beb1-9f2db8b1d9af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e9d6bb8e-a6ba-4ef3-9467-5799ade568ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{5ec336ad-dbcd-47a2-b1a8-2b4c834f8dba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\System">
+      <UniqueIdentifier>{fd203399-5912-47b6-a221-6b2be365203b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Rendering">
+      <UniqueIdentifier>{bc90f0d7-d071-4ce2-9537-577d04302405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Models">
+      <UniqueIdentifier>{45a2c4f8-18d6-401a-806b-f2511c942a2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Vertex Models">
+      <UniqueIdentifier>{51594f9d-2f66-4833-90e9-9ac35f4351e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CGModel">
+      <UniqueIdentifier>{c7ee4610-6d91-4de9-8bff-64180ea78fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Cloth">
+      <UniqueIdentifier>{1932c640-a334-40fb-a9e2-d73f40235094}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

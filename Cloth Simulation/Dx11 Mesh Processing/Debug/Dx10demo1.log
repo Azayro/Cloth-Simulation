@@ -1,0 +1,70 @@
+﻿Build started 25/11/2013 19:11:47.
+     1>Project "C:\Users\pna\Documents\Teaching\CS4S706 Realtime Computer Graphics\year1314\Dx11 Demo01b\Dx10demo1.vcxproj" on node 2 (Rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\Dx10demo1.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\Dx10demo1.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Include" /IEffects11 /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Source\CGBaseModel.cpp Source\CGCube.cpp Source\CGModelInstance.cpp Source\CGOutputMergerStage.cpp Source\CGPrincipleAxes.cpp Source\CGPyramid.cpp Source\CGTextureLoader.cpp Source\CGVertexBasic.cpp Source\CGVertexExt.cpp Source\CGPipeline.cpp Source\HLSLFactory.cpp Source\main.cpp Source\CGClock.cpp Source\CGObject.cpp
+         CGObject.cpp
+         CGClock.cpp
+         main.cpp
+         HLSLFactory.cpp
+         CGPipeline.cpp
+         CGVertexExt.cpp
+         CGVertexBasic.cpp
+         CGTextureLoader.cpp
+         CGPyramid.cpp
+         CGPrincipleAxes.cpp
+         CGOutputMergerStage.cpp
+         CGModelInstance.cpp
+         CGCube.cpp
+         CGBaseModel.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Dx10demo1.exe.embed.manifest.res" Debug\Dx10demo1_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\pna\Documents\Teaching\CS4S706 Realtime Computer Graphics\year1314\Dx11 Demo01b\Debug\Dx10demo1.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Lib\x86" /LIBPATH:Effects11 Effects11.lib d3d11.lib d3dx11d.lib D3DCompiler.lib dxerr.lib dxgi.lib dxguid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Dx10demo1.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\pna\Documents\Teaching\CS4S706 Realtime Computer Graphics\year1314\Dx11 Demo01b\Debug\Dx10demo1.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\pna\Documents\Teaching\CS4S706 Realtime Computer Graphics\year1314\Dx11 Demo01b\Debug\Dx10demo1.lib" /MACHINE:X86 Debug\Dx10demo1.exe.embed.manifest.res
+         Debug\CGBaseModel.obj
+         Debug\CGCube.obj
+         Debug\CGModelInstance.obj
+         Debug\CGOutputMergerStage.obj
+         Debug\CGPrincipleAxes.obj
+         Debug\CGPyramid.obj
+         Debug\CGTextureLoader.obj
+         Debug\CGVertexBasic.obj
+         Debug\CGVertexExt.obj
+         Debug\CGPipeline.obj
+         Debug\HLSLFactory.obj
+         Debug\main.obj
+         Debug\CGClock.obj
+         Debug\CGObject.obj
+       Manifest:
+         Deleting file "Debug\Dx10demo1.exe.embed.manifest".
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Dx10demo1.exe.embed.manifest" /manifest Debug\Dx10demo1.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Dx10demo1.exe.embed.manifest.res" Debug\Dx10demo1_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\pna\Documents\Teaching\CS4S706 Realtime Computer Graphics\year1314\Dx11 Demo01b\Debug\Dx10demo1.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Lib\x86" /LIBPATH:Effects11 Effects11.lib d3d11.lib d3dx11d.lib D3DCompiler.lib dxerr.lib dxgi.lib dxguid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Dx10demo1.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\pna\Documents\Teaching\CS4S706 Realtime Computer Graphics\year1314\Dx11 Demo01b\Debug\Dx10demo1.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\pna\Documents\Teaching\CS4S706 Realtime Computer Graphics\year1314\Dx11 Demo01b\Debug\Dx10demo1.lib" /MACHINE:X86 Debug\Dx10demo1.exe.embed.manifest.res
+         Debug\CGBaseModel.obj
+         Debug\CGCube.obj
+         Debug\CGModelInstance.obj
+         Debug\CGOutputMergerStage.obj
+         Debug\CGPrincipleAxes.obj
+         Debug\CGPyramid.obj
+         Debug\CGTextureLoader.obj
+         Debug\CGVertexBasic.obj
+         Debug\CGVertexExt.obj
+         Debug\CGPipeline.obj
+         Debug\HLSLFactory.obj
+         Debug\main.obj
+         Debug\CGClock.obj
+         Debug\CGObject.obj
+         Dx10demo1.vcxproj -> C:\Users\pna\Documents\Teaching\CS4S706 Realtime Computer Graphics\year1314\Dx11 Demo01b\Debug\Dx10demo1.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\Dx10demo1.unsuccessfulbuild".
+         Touching "Debug\Dx10demo1.lastbuildstate".
+     1>Done Building Project "C:\Users\pna\Documents\Teaching\CS4S706 Realtime Computer Graphics\year1314\Dx11 Demo01b\Dx10demo1.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:21.57

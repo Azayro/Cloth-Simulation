@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E898E805-8E57-4B5C-86A4-7DC14D6BD6D5}</ProjectGuid>
+    <RootNamespace>Dx10demo1</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>Dx11demo</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir);$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>$(ProjectDir);$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(DXSDK_DIR)\Include;Effects11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>CGImport3.lib;CoreStructures.lib;Effects11.lib;d3d11.lib;d3dx11d.lib;D3DCompiler.lib;dxerr.lib;dxgi.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)\Lib\x86;Effects11;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Cloth.cpp" />
+    <ClCompile Include="CShaderFactory.cpp" />
+    <ClCompile Include="Source\CGBaseModel.cpp" />
+    <ClCompile Include="Source\CGBasicGrass.cpp" />
+    <ClCompile Include="Source\CGBasicTerrain.cpp" />
+    <ClCompile Include="Source\CGCube.cpp" />
+    <ClCompile Include="Source\CGModelInstance.cpp" />
+    <ClCompile Include="Source\CGOutputMergerStage.cpp" />
+    <ClCompile Include="Source\CGPrincipleAxes.cpp" />
+    <ClCompile Include="Source\CGPyramid.cpp" />
+    <ClCompile Include="Source\CGRasteriserStage.cpp" />
+    <ClCompile Include="Source\CGSnowParticles.cpp" />
+    <ClCompile Include="Source\CGTextureLoader.cpp" />
+    <ClCompile Include="Source\CGVertexBasic.cpp" />
+    <ClCompile Include="Source\CGVertexExt.cpp" />
+    <ClCompile Include="Source\CGPipeline.cpp" />
+    <ClCompile Include="Source\HermiteCurve.cpp" />
+    <ClCompile Include="Source\HLSLFactory.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\CGClock.cpp" />
+    <ClCompile Include="Source\CGObject.cpp" />
+    <ClCompile Include="Source\Triangle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shaders\basic_grass_gs.hlsl" />
+    <None Include="Resources\Shaders\basic_grass_ps.hlsl" />
+    <None Include="Resources\Shaders\basic_grass_vs.hlsl" />
+    <None Include="Resources\Shaders\basic_lighting_ps.hlsl" />
+    <None Include="Resources\Shaders\basic_tex_lighting_ps.hlsl" />
+    <None Include="Resources\Shaders\basic_tex_lighting_vs.hlsl" />
+    <None Include="Resources\Shaders\basic_colour_ps.hlsl" />
+    <None Include="Resources\Shaders\basic_colour_vs.hlsl" />
+    <None Include="Resources\Shaders\basic_lighting_vs.hlsl" />
+    <None Include="Resources\Shaders\cloth_anchors_cs.hlsl" />
+    <None Include="Resources\Shaders\cloth_constraints_cs.hlsl" />
+    <None Include="Resources\Shaders\cloth_forces_cs.hlsl" />
+    <None Include="Resources\Shaders\hermite_gs.hlsl" />
+    <None Include="Resources\Shaders\hermite_ps.hlsl" />
+    <None Include="Resources\Shaders\hermite_vs.hlsl" />
+    <None Include="Resources\Shaders\snow_ps.hlsl" />
+    <None Include="Resources\Shaders\snow_render_gs.hlsl" />
+    <None Include="Resources\Shaders\snow_update_gs.hlsl" />
+    <None Include="Resources\Shaders\snow_vs.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CGModel\CGMaterial.h" />
+    <ClInclude Include="CGModel\CGModel.h" />
+    <ClInclude Include="CGModel\CGPolyMesh.h" />
+    <ClInclude Include="Cloth.h" />
+    <ClInclude Include="CShaderFactory.h" />
+    <ClInclude Include="Source\CGBasicGrass.h" />
+    <ClInclude Include="Source\CGBasicTerrain.h" />
+    <ClInclude Include="Source\CGRasteriserStage.h" />
+    <ClInclude Include="Source\CGSnowParticles.h" />
+    <ClInclude Include="Source\HermiteCurve.h" />
+    <ClInclude Include="Source\buffers.h" />
+    <ClInclude Include="Source\CGBaseModel.h" />
+    <ClInclude Include="Source\CGClock.h" />
+    <ClInclude Include="Source\CGCube.h" />
+    <ClInclude Include="Source\CGModelInstance.h" />
+    <ClInclude Include="Source\CGObject.h" />
+    <ClInclude Include="Source\CGOutputMergerStage.h" />
+    <ClInclude Include="Source\CGPivotCamera.h" />
+    <ClInclude Include="Source\CGPrincipleAxes.h" />
+    <ClInclude Include="Source\CGPyramid.h" />
+    <ClInclude Include="Source\CGTextureLoader.h" />
+    <ClInclude Include="Source\CGVertexBasic.h" />
+    <ClInclude Include="Source\CGVertexExt.h" />
+    <ClInclude Include="Source\CGPipeline.h" />
+    <ClInclude Include="Source\HLSLFactory.h" />
+    <ClInclude Include="Source\Triangle.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

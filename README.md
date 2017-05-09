@@ -7,12 +7,12 @@ Most of the files were provided as part of the foundations for the coursework se
 
 The following files are 100% mine:
 
-Dx11 Mesh Porciessing/Cloth.cpp
-Dx11 Mesh Porciessing/Cloth.h
+Dx11 Mesh Processing/Cloth.cpp
+Dx11 Mesh Processing/Cloth.h
 
-Dx11 Mesh Porciessing/Resources/Shaders/cloth_anchors_cs
-Dx11 Mesh Porciessing/Resources/Shaders/cloth_constraints_cs
-Dx11 Mesh Porciessing/Resources/Shaders/cloth_forces_cs
+Dx11 Mesh Processing/Resources/Shaders/cloth_anchors_cs
+Dx11 Mesh Processing/Resources/Shaders/cloth_constraints_cs
+Dx11 Mesh Processing/Resources/Shaders/cloth_forces_cs
 
 Dx11 Mesh Porciessing/Resources/Shaders/superman.jpg - Used to texture the cloth
 
